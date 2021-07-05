@@ -1,0 +1,22 @@
+This one is designed using Arduino so we have a better control over the LED's
+Circuit on proteus : https://prnt.sc/18sghg3
+GIF showing it's working : https://gyazo.com/f1d8b1b8a19ff02df04e54d6cef68e3d
+
+Code :
+
+int led1 = 9;
+int led2 = 10;
+
+void setup() {
+pinMode(led1, OUTPUT);
+pinMode(led2, OUTPUT);
+}
+
+void loop() {
+digitalWrite(led1, HIGH);
+digitalWrite(led2, HIGH);
+delay(1000);
+digitalWrite(led1, LOW);
+digitalWrite(led2, LOW);
+delay(1000);
+}
